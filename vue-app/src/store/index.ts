@@ -1,13 +1,13 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import { SampleModule } from './SampleModule'
+import Vue from "vue";
+import Vuex from "vuex";
+import { SampleModule } from "./SampleModule";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    SampleModule,
+    SampleModule
   }
-})
+});
 
-export default store
+export default store;

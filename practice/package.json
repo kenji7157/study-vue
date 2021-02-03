@@ -9,6 +9,7 @@
   "author": "Kenji Kawanobe <kawake.kk@gmail.com> (https://github.com/kenji7157)",
   "license": "ISC",
   "dependencies": {
+    "firebase": "^8.0.2",
     "vue": "^2.6.12"
   }
 }
