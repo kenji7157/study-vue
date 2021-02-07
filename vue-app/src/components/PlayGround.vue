@@ -1,18 +1,23 @@
 <template>
   <div>
-    <h1>遊び場</h1>
-    <button>カウントアップ</button>
-    <p>{{ count }}</p>
+    <button @click="show">表示する</button>
+    <p v-if="hoge.isShow">表示</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "hello",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      hoge: {
+        // isShow: false, コメントアウトで未定義にしています
+      }
     };
+  },
+  methods: {
+    show() {
+      this.$set(this.hoge, "isShow", true);
+    }
   }
 };
 </script>
